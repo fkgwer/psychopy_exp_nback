@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on Fri Feb  6 15:25:22 2026
+    on Fri Feb  6 15:47:23 2026
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -209,7 +209,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/wernstal/Library/Mobile Documents/com~apple~CloudDocs/Forskning/My_PhD:Patrick Purdon/Code/Psychopy/1.n-back_w_practice_latest_post_Alex_comments/auditory_n_back.py',
+        originPath='/Users/wernstal/Library/Mobile Documents/com~apple~CloudDocs/Forskning/My_PhD:Patrick Purdon/Code/Psychopy/1.auditory_nback/auditory_n_back.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -719,31 +719,31 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # Stimulus sounds (shared across all phases)
     # ------------------------------------------------------
     stimulus_list = [
-        'sine_wave_frequency128_duration0.75s_tagging_frequency43Hz_modulation_depth1.0_base_amplitude0.5.wav',
-        'sine_wave_frequency256_duration0.75s_tagging_frequency43Hz_modulation_depth1.0_base_amplitude0.5.wav',
-        'sine_wave_frequency512_duration0.75s_tagging_frequency43Hz_modulation_depth1.0_base_amplitude0.5.wav',
-        'sine_wave_frequency880_duration0.75s_tagging_frequency43Hz_modulation_depth1.0_base_amplitude0.5.wav'
+        'resources/stimulus_audio/sine_wave_frequency128_duration0.75s_tagging_frequency43Hz_modulation_depth1.0_base_amplitude0.5.wav',
+        'resources/stimulus_audio/sine_wave_frequency256_duration0.75s_tagging_frequency43Hz_modulation_depth1.0_base_amplitude0.5.wav',
+        'resources/stimulus_audio/sine_wave_frequency512_duration0.75s_tagging_frequency43Hz_modulation_depth1.0_base_amplitude0.5.wav',
+        'resources/stimulus_audio/sine_wave_frequency880_duration0.75s_tagging_frequency43Hz_modulation_depth1.0_base_amplitude0.5.wav'
     ]
     
     # ------------------------------------------------------
     # Audio instruction files (shared)
     # ------------------------------------------------------
     instruction_files = {
-        0: 'audio_instructions/next_block_info_zero_back_01.wav',
-        1: 'audio_instructions/next_block_info_one_back_01.wav',
-        2: 'audio_instructions/next_block_info_two_back_01.wav',
-        3: 'audio_instructions/next_block_info_three_back_01.wav'
+        0: 'resources/audio_instructions/next_block_info_zero_back_01.wav',
+        1: 'resources/audio_instructions/next_block_info_one_back_01.wav',
+        2: 'resources/audio_instructions/next_block_info_two_back_01.wav',
+        3: 'resources/audio_instructions/next_block_info_three_back_01.wav'
     }
     
     otherwise_press_files = {
-        0: 'audio_instructions/next_block_otherwise_press_the_left_button.wav',
-        1: 'audio_instructions/0_75_s_silence_48000Hz.wav',
-        2: 'audio_instructions/0_75_s_silence_48000Hz.wav',
-        3: 'audio_instructions/0_75_s_silence_48000Hz.wav'
+        0: 'resources/audio_instructions/next_block_otherwise_press_the_left_button.wav',
+        1: 'resources/audio_instructions/0_75_s_silence_48000Hz.wav',
+        2: 'resources/audio_instructions/0_75_s_silence_48000Hz.wav',
+        3: 'resources/audio_instructions/0_75_s_silence_48000Hz.wav'
     }
     
-    press_to_continue_audio = 'audio_instructions/press_to_continue_audio.wav'
-    thank_you_audio = 'audio_instructions/thank_you_audio.wav'
+    press_to_continue_audio = 'resources/audio_instructions/press_to_continue_audio.wav'
+    thank_you_audio = 'resources/audio_instructions/thank_you_audio.wav'
     
     # ======================================================
     # BLOCK GENERATION FUNCTION (works for any phase)
@@ -1390,11 +1390,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     is_practice_phase = 'practice' in current_phase_name.lower()
                 
                 if is_practice_phase:
-                    practice_indicator_audio = 'audio_instructions/this_is_practice.wav'
+                    practice_indicator_audio = 'resources/audio_instructions/this_is_practice.wav'
                     practice_indicator_duration = 2.0  # Duration of your audio file
                     print(f"  ✓ Practice mode detected - will play practice indicator")
                 else:
-                    practice_indicator_audio = 'audio_instructions/this_is_the_main_task.wav'
+                    practice_indicator_audio = 'resources/audio_instructions/this_is_the_main_task.wav'
                     practice_indicator_duration = 4.0
                     print(f"  ✓ Main task mode detected - will play main task indicator")
                 
@@ -1428,7 +1428,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 if block_type == 0:
                     zero_back_sound_to_match_to = stimulus_list[current_config['zero_back_target_idx']]
                 else:
-                    zero_back_sound_to_match_to = "audio_instructions/0_75_s_silence_48000Hz.wav"
+                    zero_back_sound_to_match_to = "resources/audio_instructions/0_75_s_silence_48000Hz.wav"
                 
                 # Calculate absolute block number
                 absolute_block_number = sum(all_phases_data[phase_configs[i]['phase_name']]['num_blocks'] 
@@ -2887,17 +2887,17 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 
                 # Determine feedback audio
                 if percent_correct >= 0.9:
-                    feedback_sound = 'audio_instructions/performance_5_excellent.wav'
+                    feedback_sound = 'resources/audio_instructions/performance_5_excellent.wav'
                 elif percent_correct >= 0.8:
-                    feedback_sound = "audio_instructions/performance_3_quite_good.wav"
+                    feedback_sound = "resources/audio_instructions/performance_3_quite_good.wav"
                 elif percent_correct >= 0.6:
-                    feedback_sound = "audio_instructions/performance_2_okay.wav"
+                    feedback_sound = "resources/audio_instructions/performance_2_okay.wav"
                 else:
-                    feedback_sound = 'audio_instructions/performance_1_not_so_good.wav'
+                    feedback_sound = 'resources/audio_instructions/performance_1_not_so_good.wav'
             else:
                 fb_code_block_feedback_text = 'Not enough trials'
                 percent_correct = 0
-                feedback_sound = 'audio_instructions/performance_1_not_so_good.wav'
+                feedback_sound = 'resources/audio_instructions/performance_1_not_so_good.wav'
             
             # Calculate total misses
             block_total_misses = block_incorrect_rejection + block_miss_no_response_on_target
