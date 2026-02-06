@@ -1,0 +1,110 @@
+3.1128 	WARNING 	Component `RBButtonBoxBackend` does not appear to be a subclass of `psychopy.experiment.components._base.BaseComponent`. This will be skipped.
+3.1129 	WARNING 	Component `RBPhotodiodeValidatorBackend` does not appear to be a subclass of `psychopy.experiment.components._base.BaseComponent`. This will be skipped.
+3.1129 	WARNING 	Component `RipondaButtonBoxBackend` does not appear to be a subclass of `psychopy.experiment.components._base.BaseComponent`. This will be skipped.
+3.1129 	WARNING 	Component `RipondaPhotodiodeValidatorBackend` does not appear to be a subclass of `psychopy.experiment.components._base.BaseComponent`. This will be skipped.
+3.1129 	WARNING 	Component `StimTrackerButtonBoxBackend` does not appear to be a subclass of `psychopy.experiment.components._base.BaseComponent`. This will be skipped.
+3.1129 	WARNING 	Component `StimTrackerPhotodiodeValidatorBackend` does not appear to be a subclass of `psychopy.experiment.components._base.BaseComponent`. This will be skipped.
+7.4327 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+7.4334 	INFO 	Loaded monitor calibration from ['2024_05_01 18:24']
+7.6778 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7ff408620bb0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7ff408620ac0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7ff459b88160>, multiSample=False, name='window1', numSamples=2, pos=[1096.0, 667.0], screen=0, size=array([800, 600]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.6779 	EXP 	window1: backgroundImage = ''
+7.6779 	EXP 	window1: backgroundFit = 'none'
+7.6880 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6887 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6893 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6902 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6910 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6913 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6919 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6928 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6930 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6933 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6939 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6945 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6951 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6957 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6962 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6969 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6975 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6978 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6982 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6991 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6994 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.6997 	DEBUG 	Uploading Texture Font fontname to graphics card
+7.7044 	DEBUG 	Upload of Texture Font fontname complete
+7.7110 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.7120 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.7128 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+7.7130 	DEBUG 	Uploading Texture Font fontname to graphics card
+7.7154 	DEBUG 	Upload of Texture Font fontname complete
+7.7173 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.7173 	EXP 	window1: recordFrameIntervals = False
+7.8718 	EXP 	window1: recordFrameIntervals = True
+8.7219 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+8.7286 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7291 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7299 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7309 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7318 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7327 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7331 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7339 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7348 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7356 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7359 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.7393 	DEBUG 	Upload of Texture Font fontname complete
+8.7598 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+12.3427 	INFO 	keyboard.Keyboard is using iohub backend.
+12.4693 	INFO 	keyboard.Keyboard is using iohub backend.
+12.4694 	INFO 	keyboard.Keyboard is using iohub backend.
+12.4696 	INFO 	keyboard.Keyboard is using iohub backend.
+12.4697 	INFO 	keyboard.Keyboard is using iohub backend.
+12.4698 	INFO 	keyboard.Keyboard is using iohub backend.
+12.4698 	INFO 	keyboard.Keyboard is using iohub backend.
+12.4699 	EXP 	n-back: status = STARTED
+12.9871 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.0701 	EXP 	Sound n_back_instructions set volume 1.000
+13.0716 	EXP 	Sound sound_to_match_if_0_back set volume 1.000
+13.0868 	EXP 	Sound ir_zero_otherwise_press set volume 1.000
+13.1017 	EXP 	Sound press_to_continue_prompt set volume 1.000
+13.1148 	EXP 	Sound practice_indicator_sound set volume 1.000
+13.1490 	EXP 	Created press_to_continue = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-10.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='press_to_continue', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Press right or left arrow key to continue', units='height', win=Window(...), wrapWidth=1)
+13.1521 	EXP 	Created text_countdown = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_countdown', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.1529 	EXP 	Created Intro = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=True, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Intro', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.1686 	EXP 	Sound sound_1 set volume 1.000
+13.1743 	EXP 	Created text_iti_fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_iti_fixation', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+13.1750 	EXP 	Created fb = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fb', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.1758 	EXP 	Created rt_fb = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='rt_fb', opacity=1, ori=0.0, pos=array([ 0. , -0.1]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.1766 	EXP 	Created fb_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.06, italic=False, languageStyle='LTR', name='fb_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.1901 	EXP 	Sound fb_sound set volume 1.000
+13.2038 	EXP 	Created text_instr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text_instr', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+13.2177 	EXP 	Sound thank_you set volume 1.000
+0.0623 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+0.0624 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+0.0625 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+0.1307 	EXP 	Sound practice_indicator_sound reached end of file
+0.1365 	EXP 	Sound practice_indicator_sound started
+0.1376 	INFO 	Keyboard events cleared
+0.1372 	WARNING 	t of last frame was 100.69ms (=1/9)
+0.1372 	EXP 	text_2: height = 0.05
+0.1372 	EXP 	text_2: height = 0.05
+0.1372 	EXP 	text_2: height = 0.05
+0.1372 	EXP 	text_2: text = 'Practice 1-back: 1-back task'
+0.1372 	EXP 	text_2: autoDraw = True
+1.4618 	WARNING 	t of last frame was 40.95ms (=1/24)
+2.3558 	EXP 	Sound n_back_instructions reached end of file
+2.3707 	EXP 	Sound n_back_instructions started
+2.3929 	EXP 	Sound practice_indicator_sound reached end of file
+2.3975 	EXP 	Sound practice_indicator_sound reached end of file
+8.7983 	DATA 	Keypress: escape
+8.8146 	WARNING 	t of last frame was 89.72ms (=1/11)
+8.8186 	EXP 	n-back: status = STOPPED
+8.8375 	WARNING 	t of last frame was 22.89ms (=1/43)
+8.8375 	EXP 	text_2: autoDraw = False
+8.8393 	EXP 	n-back: status = STOPPED
+8.8420 	INFO 	saved data to '/Users/wernstal/Library/Mobile Documents/com~apple~CloudDocs/Forskning/My_PhD:Patrick Purdon/Code/Psychopy/1.n-back_w_practice_latest_post_Alex_commemnts/data/918813_n-back_2026-02-06_09h40.23.002.csv'
+8.8426 	INFO 	saved data to /Users/wernstal/Library/Mobile Documents/com~apple~CloudDocs/Forskning/My_PhD:Patrick Purdon/Code/Psychopy/1.n-back_w_practice_latest_post_Alex_commemnts/data/918813_n-back_2026-02-06_09h40.23.002.psydat
+9.5663 	DEBUG 	Saving data for n-back ExperimentHandler
