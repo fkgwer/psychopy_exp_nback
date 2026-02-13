@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2024.2.4),
-    on Fri Feb  6 15:47:23 2026
+This experiment was created using PsychoPy3 Experiment Builder (v2024.2.2a1),
+    on Fri Feb 13 12:48:40 2026
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -122,7 +122,7 @@ deviceManager = hardware.DeviceManager()
 # ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 # store info about the experiment session
-psychopyVersion = '2024.2.4'
+psychopyVersion = '2024.2.2a1'
 expName = 'auditory_n_back'  # from the Builder filename that created this script
 # information about this experiment
 expInfo = {
@@ -143,7 +143,7 @@ or run the experiment with `--pilot` as an argument. To change what pilot
 PILOTING = core.setPilotModeFromArgs()
 # start off with values from experiment settings
 _fullScr = True
-_winSize = [2992, 1934]
+_winSize = [1920, 1080]
 # if in pilot mode, apply overrides according to preferences
 if PILOTING:
     # force windowed mode
@@ -209,7 +209,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/wernstal/Library/Mobile Documents/com~apple~CloudDocs/Forskning/My_PhD:Patrick Purdon/Code/Psychopy/1.auditory_nback/auditory_n_back.py',
+        originPath='/Users/alexhe/Library/CloudStorage/Dropbox/Active_projects/PsychoPy/exp_auditory_nback/auditory_n_back.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -233,6 +233,8 @@ def setupLogging(filename):
     psychopy.logging.LogFile
         Text stream to receive inputs from the logging system.
     """
+    # log the filename of last_app_load.log
+    print('target_last_app_load_log_file: ' + filename + '_last_app_load.log')
     # set how much information should be printed to the console / app
     if PILOTING:
         logging.console.setLevel(
@@ -291,11 +293,6 @@ def setupWindow(expInfo=None, win=None):
         win.backgroundImage = ''
         win.backgroundFit = 'none'
         win.units = 'height'
-    if expInfo is not None:
-        # get/measure frame rate if not already in expInfo
-        if win._monitorFrameRate is None:
-            win._monitorFrameRate = win.getActualFrameRate(infoMsg='Attempting to measure frame rate of screen, please wait...')
-        expInfo['frameRate'] = win._monitorFrameRate
     win.hideMessage()
     # show a visual indicator if we're in piloting mode
     if PILOTING and prefs.piloting['showPilotingIndicator']:
@@ -1656,7 +1653,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         win.callOnFlip(end_routine.clock.reset)  # t=0 on next screen flip
                         win.callOnFlip(end_routine.clearEvents, eventType='keyboard')  # clear events on next screen flip
                     if end_routine.status == STARTED and not waitOnFlip:
-                        theseKeys = end_routine.getKeys(keyList=['y','n','left','right','space'], ignoreKeys=["escape"], waitRelease=True)
+                        theseKeys = end_routine.getKeys(keyList=['y','n','left','right','space', '1', '3', '4', '5', '6'], ignoreKeys=["escape"], waitRelease=True)
                         _end_routine_allKeys.extend(theseKeys)
                         if len(_end_routine_allKeys):
                             end_routine.keys = _end_routine_allKeys[0].name  # just the first key pressed
@@ -1712,7 +1709,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         win.callOnFlip(force_advance.clock.reset)  # t=0 on next screen flip
                         win.callOnFlip(force_advance.clearEvents, eventType='keyboard')  # clear events on next screen flip
                     if force_advance.status == STARTED and not waitOnFlip:
-                        theseKeys = force_advance.getKeys(keyList=['f'], ignoreKeys=["escape"], waitRelease=False)
+                        theseKeys = force_advance.getKeys(keyList=['f', '2'], ignoreKeys=["escape"], waitRelease=False)
                         _force_advance_allKeys.extend(theseKeys)
                         if len(_force_advance_allKeys):
                             force_advance.keys = _force_advance_allKeys[-1].name  # just the last key pressed
@@ -1808,7 +1805,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 Information_about_block.tStopRefresh = tThisFlipGlobal
                 thisExp.addData('Information_about_block.stopped', Information_about_block.tStop)
                 # Run 'End Routine' code from code
-                if 'f' in force_advance.keys:
+                if 'f' in force_advance.keys or '2' in force_advance.keys:
                     info_loop.finished = True
                 
                 if any(k in end_routine.keys for k in ['y', 'n', 'left', 'right', 'space']):
@@ -1941,7 +1938,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     win.callOnFlip(force_end_of_routine_if_pressed_5.clock.reset)  # t=0 on next screen flip
                     win.callOnFlip(force_end_of_routine_if_pressed_5.clearEvents, eventType='keyboard')  # clear events on next screen flip
                 if force_end_of_routine_if_pressed_5.status == STARTED and not waitOnFlip:
-                    theseKeys = force_end_of_routine_if_pressed_5.getKeys(keyList=['f'], ignoreKeys=["escape"], waitRelease=False)
+                    theseKeys = force_end_of_routine_if_pressed_5.getKeys(keyList=['f', '2'], ignoreKeys=["escape"], waitRelease=False)
                     _force_end_of_routine_if_pressed_5_allKeys.extend(theseKeys)
                     if len(_force_end_of_routine_if_pressed_5_allKeys):
                         force_end_of_routine_if_pressed_5.keys = _force_end_of_routine_if_pressed_5_allKeys[-1].name  # just the last key pressed
@@ -2217,7 +2214,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
                         win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
                     if key_resp.status == STARTED and not waitOnFlip:
-                        theseKeys = key_resp.getKeys(keyList=['y','n','left','right'], ignoreKeys=["escape"], waitRelease=False)
+                        theseKeys = key_resp.getKeys(keyList=['y','n','left','right', '1', '3', '4', '5', '6'], ignoreKeys=["escape"], waitRelease=False)
                         _key_resp_allKeys.extend(theseKeys)
                         if len(_key_resp_allKeys):
                             key_resp.keys = [key.name for key in _key_resp_allKeys]  # storing all keys
@@ -2262,7 +2259,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                             force_advance_2.status = FINISHED
                             force_advance_2.status = FINISHED
                     if force_advance_2.status == STARTED and not waitOnFlip:
-                        theseKeys = force_advance_2.getKeys(keyList=['f'], ignoreKeys=["escape"], waitRelease=False)
+                        theseKeys = force_advance_2.getKeys(keyList=['f', '2'], ignoreKeys=["escape"], waitRelease=False)
                         _force_advance_2_allKeys.extend(theseKeys)
                         if len(_force_advance_2_allKeys):
                             force_advance_2.keys = _force_advance_2_allKeys[-1].name  # just the last key pressed
@@ -3042,7 +3039,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     win.callOnFlip(force_end_of_routine_if_pressed_2.clock.reset)  # t=0 on next screen flip
                     win.callOnFlip(force_end_of_routine_if_pressed_2.clearEvents, eventType='keyboard')  # clear events on next screen flip
                 if force_end_of_routine_if_pressed_2.status == STARTED and not waitOnFlip:
-                    theseKeys = force_end_of_routine_if_pressed_2.getKeys(keyList=['f','l','r','left','right'], ignoreKeys=["escape"], waitRelease=False)
+                    theseKeys = force_end_of_routine_if_pressed_2.getKeys(keyList=['f', '2'], ignoreKeys=["escape"], waitRelease=False)
                     _force_end_of_routine_if_pressed_2_allKeys.extend(theseKeys)
                     if len(_force_end_of_routine_if_pressed_2_allKeys):
                         force_end_of_routine_if_pressed_2.keys = _force_end_of_routine_if_pressed_2_allKeys[-1].name  # just the last key pressed
