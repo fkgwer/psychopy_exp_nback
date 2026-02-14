@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2024.2.2a1),
-    on Fri Feb 13 12:48:40 2026
+    on Fri Feb 13 16:18:48 2026
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -199,7 +199,7 @@ def setupData(expInfo, dataDir=None):
     # data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
     if dataDir is None:
         dataDir = _thisDir
-    filename = u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])
+    filename = u'data/%s/%s_%s_%s' % (expInfo['participant'], expInfo['participant'], expName, expInfo['date'])
     # make sure filename is relative to dataDir
     if os.path.isabs(filename):
         dataDir = os.path.commonprefix([dataDir, filename])
@@ -250,7 +250,7 @@ def setupLogging(filename):
         )
     else:
         logFile.setLevel(
-            logging.getLevel('info')
+            logging.getLevel('debug')
         )
     
     return logFile
@@ -990,7 +990,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     
     # --- Initialize components for Routine "Information_about_block" ---
-    text_2 = visual.TextStim(win=win, name='text_2',
+    block_instruction = visual.TextStim(win=win, name='block_instruction',
         text='',
         font='Arial',
         pos=(0, 0.1), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
@@ -1058,9 +1058,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     force_end_of_routine_if_pressed_5 = keyboard.Keyboard(deviceName='force_end_of_routine_if_pressed_5')
     
     # --- Initialize components for Routine "n_back_trial" ---
-    # Run 'Begin Experiment' code from code_random
+    # Run 'Begin Experiment' code from setup_trial
     # Initialize as None to distinguish from False
     corrAns = None
+    
     Intro = visual.TextStim(win=win, name='Intro',
         text='',
         font='Arial',
@@ -1354,12 +1355,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 # create an object to store info about Routine Information_about_block
                 Information_about_block = data.Routine(
                     name='Information_about_block',
-                    components=[text_2, n_back_instructions, sound_to_match_if_0_back, ir_zero_otherwise_press, end_routine, press_to_continue_prompt, force_advance, practice_indicator_sound, press_to_continue],
+                    components=[block_instruction, n_back_instructions, sound_to_match_if_0_back, ir_zero_otherwise_press, end_routine, press_to_continue_prompt, force_advance, practice_indicator_sound, press_to_continue],
                 )
                 Information_about_block.status = NOT_STARTED
                 continueRoutine = True
                 # update component parameters for each repeat
-                # Run 'Begin Routine' code from code
+                # Run 'Begin Routine' code from setup_block
                 # ======================================================
                 # GET CURRENT PHASE AND BLOCK DATA
                 # ======================================================
@@ -1447,7 +1448,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 timeout_duration = 5
                 timeout_start = None
                 response_made = False
-                text_2.setText(block_message)
+                
+                block_instruction.setText(block_message)
                 n_back_instructions.setSound(block_instructions, hamming=True)
                 n_back_instructions.setVolume(1.0, log=False)
                 n_back_instructions.seek(0)
@@ -1477,6 +1479,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 # Start a main experiment trial block
                 dev.activate_line(bitmask=block_start_code)
                 # no need to wait 500ms as instructions are displayed
+                
                 practice_indicator_sound.setSound(practice_indicator_audio, hamming=True)
                 practice_indicator_sound.setVolume(1.0, log=False)
                 practice_indicator_sound.seek(0)
@@ -1517,39 +1520,39 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         Information_about_block.maxDurationReached = True
                         continueRoutine = False
                     
-                    # *text_2* updates
+                    # *block_instruction* updates
                     
-                    # if text_2 is starting this frame...
-                    if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if block_instruction is starting this frame...
+                    if block_instruction.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        text_2.frameNStart = frameN  # exact frame index
-                        text_2.tStart = t  # local t and not account for scr refresh
-                        text_2.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
+                        block_instruction.frameNStart = frameN  # exact frame index
+                        block_instruction.tStart = t  # local t and not account for scr refresh
+                        block_instruction.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(block_instruction, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'text_2.started')
+                        thisExp.timestampOnFlip(win, 'block_instruction.started')
                         # update status
-                        text_2.status = STARTED
-                        text_2.setAutoDraw(True)
+                        block_instruction.status = STARTED
+                        block_instruction.setAutoDraw(True)
                     
-                    # if text_2 is active this frame...
-                    if text_2.status == STARTED:
+                    # if block_instruction is active this frame...
+                    if block_instruction.status == STARTED:
                         # update params
                         pass
                     
-                    # if text_2 is stopping this frame...
-                    if text_2.status == STARTED:
+                    # if block_instruction is stopping this frame...
+                    if block_instruction.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > text_2.tStartRefresh + 11.75-frameTolerance:
+                        if tThisFlipGlobal > block_instruction.tStartRefresh + 11.75-frameTolerance:
                             # keep track of stop time/frame for later
-                            text_2.tStop = t  # not accounting for scr refresh
-                            text_2.tStopRefresh = tThisFlipGlobal  # on global time
-                            text_2.frameNStop = frameN  # exact frame index
+                            block_instruction.tStop = t  # not accounting for scr refresh
+                            block_instruction.tStopRefresh = tThisFlipGlobal  # on global time
+                            block_instruction.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'text_2.stopped')
+                            thisExp.timestampOnFlip(win, 'block_instruction.stopped')
                             # update status
-                            text_2.status = FINISHED
-                            text_2.setAutoDraw(False)
+                            block_instruction.status = FINISHED
+                            block_instruction.setAutoDraw(False)
                     
                     # *n_back_instructions* updates
                     
@@ -1804,12 +1807,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 Information_about_block.tStop = globalClock.getTime(format='float')
                 Information_about_block.tStopRefresh = tThisFlipGlobal
                 thisExp.addData('Information_about_block.stopped', Information_about_block.tStop)
-                # Run 'End Routine' code from code
+                # Run 'End Routine' code from setup_block
                 if 'f' in force_advance.keys or '2' in force_advance.keys:
                     info_loop.finished = True
                 
-                if any(k in end_routine.keys for k in ['y', 'n', 'left', 'right', 'space']):
+                if any(k in end_routine.keys for k in ['y', 'n', 'left', 'right', 'space', '3', '6']):
                     info_loop.finished = True
+                
                 n_back_instructions.pause()  # ensure sound has stopped at end of Routine
                 sound_to_match_if_0_back.pause()  # ensure sound has stopped at end of Routine
                 ir_zero_otherwise_press.pause()  # ensure sound has stopped at end of Routine
@@ -2036,7 +2040,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 n_back_trial.status = NOT_STARTED
                 continueRoutine = True
                 # update component parameters for each repeat
-                # Run 'Begin Routine' code from code_random
+                # Run 'Begin Routine' code from setup_trial
                 # ======================================================
                 # GET CURRENT PHASE AND TRIAL DATA
                 # ======================================================
@@ -2064,6 +2068,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                       f"Stimulus={current_stimulus.split('_')[3]}, "
                       f"Type={trial_type}, "
                       f"Baseline={is_baseline_trial}")
+                
                 Intro.setColor([0.9608, 0.8431, 0.6863], colorSpace='rgb')
                 Intro.setText('Sound')
                 sound_1.setSound(current_stimulus, hamming=True)
@@ -2357,7 +2362,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 n_back_trial.tStop = globalClock.getTime(format='float')
                 n_back_trial.tStopRefresh = tThisFlipGlobal
                 thisExp.addData('n_back_trial.stopped', n_back_trial.tStop)
-                # Run 'End Routine' code from code_random
+                # Run 'End Routine' code from setup_trial
                 # ======================================================
                 # EXTRACT RESPONSE DATA
                 # ======================================================
@@ -2381,9 +2386,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 # CATEGORIZE RESPONSE TYPE
                 # ======================================================
                 if response_key:
-                    if response_key in ['y', 'right', 'r']:
+                    if response_key in ['y', 'right', 'r', '6']:
                         response_type = 'target_response'
-                    elif response_key in ['n', 'left', 'l']:
+                    elif response_key in ['n', 'left', 'l', '3']:
                         response_type = 'non_target_response'
                     else:
                         response_type = 'invalid_response'
@@ -2646,6 +2651,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 acc_str = f"{running_accuracy:.2%}" if scorable_trials_so_far > 0 else "N/A"
                 
                 print(f"    {performance_category} | RT: {rt_str} | Acc: {acc_str}")
+                
                 sound_1.pause()  # ensure sound has stopped at end of Routine
                 # check responses
                 if key_resp.keys in ['', [], None]:  # No response was made
